@@ -24,7 +24,7 @@
 }
 
 .box {
-    height: 7vh; /*50px with line 49*/
+    height: 10vh; /*50px with line 49*/
     background-color: var(--offBlack);
     width: 100%;
     z-index: 12;
@@ -32,7 +32,7 @@
 }
 
 .navbar {
-    line-height: 7vh;
+    line-height: 10vh;
 }
 
 /* Formatting links inside navbar */
@@ -41,7 +41,7 @@
     text-decoration: none;
     margin: 30px;
     color: var(--offWhite);
-    padding: 20px 20px; /*17px top bottom*/
+    padding: 30px 30px; /*17px top bottom*/
 }
 
 /* Effects for links inside nav bar */
@@ -142,6 +142,7 @@
     background-color: var(--offBlack);
 }
 
+/* Gradient banner */  
 .photo_box {
     min-height: 30vh;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b0082+0,ff3131+50,fff01f+100&0.75+0,0.75+100 */
@@ -152,6 +153,7 @@
     position: relative;
 }
 
+/* Text formatting inside gradient banner */ 
 .photo_box h1 {
     font-size: 2vw;
     color: var(--offWhite);
@@ -164,7 +166,7 @@
     transform: translate(-50%, -50%);
     color: var(--offWhite);
 }
-
+ 
 .about_main p {
     margin: 50px 200px 50px 200px;
     color: var(--offWhite);
@@ -186,6 +188,7 @@
     margin: 5% 15%;
 }
 
+/* Funky border around my photo */ 
 .offset_borders::before {
     content: "";
     width: 100%;
@@ -218,3 +221,20 @@
     padding: 0;
     background-color: var(--offWhite);
 }
+
+.resume_main{
+    margin: 50px 200px 50px 200px;
+    color: var(--offBlack);
+    text-align: left;
+}
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
