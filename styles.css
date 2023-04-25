@@ -18,13 +18,27 @@
     --offWhite: #fdfdfd; 
 }
 
+/* Home Page */
+
+.home_body {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/neon_road.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100%;
+    padding: 0;
+    color: var(--offWhite);
+}
+
 .header {
     width: 100%;
     margin: 0 auto;
 }
 
 .box {
-    height: 60px; 
+    height: 60px;
     background-color: var(--offBlack);
     width: 100%;
     z-index: 12;
@@ -39,9 +53,9 @@
 
 .navbar a {
     text-decoration: none;
-    margin: 30px; 
+    margin: 30px;
     color: var(--offWhite);
-    padding: 17px 20px; 
+    padding: 17px 20px;
 }
 
 /* Effects for links inside nav bar */
@@ -64,20 +78,6 @@
 .portfolio:hover {
     border: 1px solid var(--neonGreen);
     box-shadow: 3px 3px 3px var(--neonGreen);
-}
-
-/* Home Page */
-
-.home_body {
-    text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/neon_road.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100%;
-    padding: 0;
-    color: var(--offWhite);
 }
 
 /* Text over background image */
@@ -105,7 +105,7 @@
     padding-left: 5%;
     font-family: 'Playfair Display', serif;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 80px; 
+    font-size: 80px;
     animation: neon 2s ease forwards;
 }
 
@@ -125,7 +125,6 @@
     }
 }
 
-/* Text initially has opacity of 0 (invisible), then gradually appears on to page with opacity of 1 (completely visible) */
 @keyframes appear {
     100% {
         opacity: 1;
@@ -141,7 +140,6 @@
     background-color: var(--offBlack);
 }
 
-/* Gradient banner */  
 .photo_box {
     min-height: 40vh;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b0082+0,ff3131+50,fff01f+100&0.75+0,0.75+100 */
@@ -152,7 +150,6 @@
     position: relative;
 }
 
-/* Text formatting inside gradient banner */ 
 .photo_box h1 {
     font-size: 32px;
     color: var(--offWhite);
@@ -167,32 +164,36 @@
 }
 
 .description {
-    position: relative; 
+    position: relative;
     float: right; 
-    display: block;
-    width: 30vw;
-    margin: 200px; 
 }
 
-.about_main p {  
+.about_main p {
     color: var(--offWhite);
-    text-align: left; 
+    text-align: left;  
 }
 
-.my_photo {
-    position: relative;
-    float: left;
-    width: 15vw; 
-    display: block;
+.professional {
+    margin: 5% 15% 3% 15%;
 }
 
-/* Funky border around my photo :0 */ 
+.personal {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}
+
+.my_photo { 
+    width: 200px; 
+}
+
 .offset_borders {
-    width: 15vw; 
-    margin: 100px auto;
+    width: 200px;
     position: relative;
     float: left;
-    margin: 5% 15%;
+    margin-bottom: 5%; 
+    margin-left: 15%; 
+    margin-right: 15%;
 }
 
 .offset_borders::before {
@@ -202,8 +203,8 @@
     border: 3px solid var(--offWhite);
     position: absolute;
     box-sizing: border-box;
-    top: 40px;
-    left: -20px;
+    top: 50px;
+    left: -25px;
     z-index: -2;
 }
 
@@ -214,23 +215,7 @@
     background-color: var(--neonRed);
     position: absolute;
     box-sizing: border-box;
-    top: 20px;
-    left: 20px;
+    top: 25px;
+    left: 25px;
     z-index: -1;
 }
-
-/* Resume page */ 
-
-.resume_body {
-    text-align: center;
-}
-
-.resume_main {
-    text-align: left;
-    color: var(--offBlack);
-}
-    
-    
-    
-    
-    
