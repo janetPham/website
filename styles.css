@@ -24,7 +24,7 @@
 }
 
 .box {
-    height: 75px; 
+    height: 80px; 
     background-color: var(--offBlack);
     width: 100%;
     z-index: 12;
@@ -167,13 +167,12 @@
 }
  
 .about_main p {
-    margin: 2vw 20vw; /* Testing */
+    margin: 50px 200px; /* Testing */
     color: var(--offWhite);
     text-align: left;
 }
 
 .my_photo {
-    margin: 2vw; /* Added */
     position: relative;
     /* float: left; */
     width: 15vw;
@@ -215,6 +214,10 @@
 
 /* Resume page */ 
 
+.resume_body {
+    text-align: center;
+    color: var(--offBlack);
+}
 
 
 
