@@ -18,20 +18,6 @@
     --offWhite: #fdfdfd; 
 }
 
-/* Home Page */
-
-.home_body {
-    text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/neon_road.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100%;
-    padding: 0;
-    color: var(--offWhite);
-}
-
 .header {
     width: 100%;
     margin: 0 auto;
@@ -80,6 +66,20 @@
     box-shadow: 3px 3px 3px var(--neonGreen);
 }
 
+/* Home Page */
+
+.home_body {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/neon_road.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100%;
+    padding: 0;
+    color: var(--offWhite);
+}
+
 /* Text over background image */
 
 .overlay {
@@ -126,6 +126,7 @@
     }
 }
 
+/* Text initially has opacity of 0 (invisible), then gradually appears on to page with opacity of 1 (completely visible) */
 @keyframes appear {
     100% {
         opacity: 1;
@@ -207,4 +208,13 @@
     top: 20px;
     left: 20px;
     z-index: -1;
+}
+
+/* Resume page */ 
+
+.resume_body {
+    text-align: center; 
+    min-height: 100%;
+    padding: 0;
+    background-color: var(--offWhite);
 }
