@@ -24,7 +24,7 @@
 }
 
 .box {
-    height: 80px; 
+    height: 85px; 
     background-color: var(--offBlack);
     width: 100%;
     z-index: 12;
@@ -32,7 +32,7 @@
 }
 
 .navbar {
-    line-height: 75px;
+    line-height: 85px;
 }
 
 /* Formatting links inside navbar */
@@ -167,7 +167,7 @@
 }
  
 .about_main p {
-    margin: 50px 200px; /* Testing */
+    margin: 50px 200px; 
     color: var(--offWhite);
     text-align: left;
 }
@@ -216,14 +216,12 @@
 
 .resume_body {
     text-align: center;
-    color: var(--offBlack);
 }
 
-
-
-    
-    
-    
+.resume_main {
+    text-align: left;
+    color: var(--offBlack);
+}
     
     
     
