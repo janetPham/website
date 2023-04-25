@@ -41,7 +41,7 @@
     text-decoration: none;
     margin: 50px; /* 30px originally */
     color: var(--offWhite);
-    padding: 20px 30px; 
+    padding: 20px 25px; 
 }
 
 /* Effects for links inside nav bar */
@@ -161,14 +161,14 @@
     font-family: 'Playfair Display', serif;
     font-family: 'Titillium Web', sans-serif;
     position: absolute;
-    top: 62%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--offWhite);
 }
  
 .about_main p {
-    margin: 50px 200px 50px 200px;
+    margin: 5vw 20vw;
     color: var(--offWhite);
     text-align: left;
 }
@@ -180,6 +180,7 @@
     display: block;
 }
 
+/* Funky border around my photo */ 
 .offset_borders {
     width: 15vw;
     margin: 100px auto;
@@ -188,7 +189,6 @@
     margin: 5% 15%;
 }
 
-/* Funky border around my photo */ 
 .offset_borders::before {
     content: "";
     width: 100%;
