@@ -38,7 +38,7 @@
 }
 
 .box {
-    height: 60px;
+    height: 5vh; /*50px with line 49*/
     background-color: var(--offBlack);
     width: 100%;
     z-index: 12;
@@ -46,7 +46,7 @@
 }
 
 .navbar {
-    line-height: 60px;
+    line-height: 5vh;
 }
 
 /* Formatting links inside navbar */
@@ -152,7 +152,7 @@
 }
 
 .photo_box h1 {
-    font-size: 5vw;
+    font-size: 2vw;
     color: var(--offWhite);
     text-align: center;
     font-family: 'Playfair Display', serif;
