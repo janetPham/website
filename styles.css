@@ -24,7 +24,7 @@
 }
 
 .box {
-    height: 10vh; /*50px with line 49*/
+    height: 8vh; /*50px with line 49*/
     background-color: var(--offBlack);
     width: 100%;
     z-index: 12;
@@ -32,7 +32,7 @@
 }
 
 .navbar {
-    line-height: 10vh;
+    line-height: 8vh;
 }
 
 /* Formatting links inside navbar */
@@ -41,7 +41,7 @@
     text-decoration: none;
     margin: 30px;
     color: var(--offWhite);
-    padding: 30px 30px; /*17px top bottom*/
+    padding: 20px 40px; /*17px top bottom*/
 }
 
 /* Effects for links inside nav bar */
@@ -220,12 +220,8 @@
     min-height: 100%;
     padding: 0;
     background-color: var(--offWhite);
-}
-
-.resume_main{
     margin: 50px 200px 50px 200px;
     color: var(--offBlack);
-    text-align: left;
 }
     
 
