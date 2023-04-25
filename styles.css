@@ -166,18 +166,13 @@
     color: var(--offWhite);
 }
 
-.description {
-    float: right;
-    position: fixed;
-    top: 50px; 
-    right: 200px; 
-    bottom: 50px;
-    left: 200px;
-}
-
 .about_main p {  
     color: var(--offWhite);
     text-align: left;
+    position: relative; 
+    float: right; 
+    display: block;
+    width: 30vw; 
 }
 
 .my_photo {
