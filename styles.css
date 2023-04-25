@@ -166,14 +166,9 @@
     color: var(--offWhite);
 }
 
-.about_main {
-    display: inline; 
-    align-items: center;
-    justify-content: center;
-}
-
 .description {
     float: right;
+    display: inline-block;
 }
 
 .about_main p {  
