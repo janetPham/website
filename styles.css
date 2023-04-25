@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Jost', sans-serif; 
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* Global variables for color palette */
@@ -105,12 +105,12 @@
     padding-left: 5%;
     font-family: 'Playfair Display', serif;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 80px; 
+    font-size: 100px; 
     animation: neon 2s ease forwards;
 }
 
 .intro {
-    font-size: 20px;
+    font-size: 25px;
     padding-top: 3%;
     padding-right: 15%;
     padding-left: 15%;
@@ -165,16 +165,25 @@
     transform: translate(-50%, -50%);
     color: var(--offWhite);
 }
- 
-.about_main p {
-    margin: 50px 200px; 
+
+.about_main {
+    display: inline; 
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    float: right;
+}
+
+.about_main p {  
     color: var(--offWhite);
     text-align: left;
 }
 
 .my_photo {
     position: relative;
-    /* float: left; */
+    float: left;
     width: 15vw;
     display: block;
 }
