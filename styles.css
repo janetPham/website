@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Jost', sans-serif; 
-    font-size: 0.8vw;
+    font-size: 14px;
 }
 
 /* Global variables for color palette */
@@ -24,7 +24,7 @@
 }
 
 .box {
-    height: 10vh; /* Same as line height for navbar */
+    height: 50px; 
     background-color: var(--offBlack);
     width: 100%;
     z-index: 12;
@@ -32,7 +32,7 @@
 }
 
 .navbar {
-    line-height: 10vh;
+    line-height: 50px;
 }
 
 /* Formatting links inside navbar */
@@ -105,13 +105,12 @@
     padding-left: 5%;
     font-family: 'Playfair Display', serif;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 8vw;
-    /*80 px*/ 
+    font-size: 80px; 
     animation: neon 2s ease forwards;
 }
 
 .intro {
-    font-size: 1.5vw;
+    font-size: 20px;
     padding-top: 3%;
     padding-right: 15%;
     padding-left: 15%;
@@ -144,7 +143,7 @@
 
 /* Gradient banner */  
 .photo_box {
-    min-height: 30vh;
+    min-height: 40vh;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b0082+0,ff3131+50,fff01f+100&0.75+0,0.75+100 */
     background: -moz-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%, rgba(255,49,49,0.75) 50%, rgba(255,240,31,0.75) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -155,20 +154,20 @@
 
 /* Text formatting inside gradient banner */ 
 .photo_box h1 {
-    font-size: 2vw;
+    font-size: 30px;
     color: var(--offWhite);
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-family: 'Titillium Web', sans-serif;
     position: absolute;
-    top: 65%;
+    top: 62%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--offWhite);
 }
  
 .about_main p {
-    margin: 2vw 20vw;
+    margin: 2vw 20vw; /* Testing */
     color: var(--offWhite);
     text-align: left;
 }
