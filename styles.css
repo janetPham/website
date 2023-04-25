@@ -171,6 +171,7 @@
     float: right; 
     display: block;
     width: 30vw;
+    margin: 200px; 
 }
 
 .about_main p {  
