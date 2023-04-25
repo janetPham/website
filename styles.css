@@ -1,0 +1,209 @@
+/* Applies throughout whole document */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif; 
+    font-size: 14px;
+}
+
+/* Global variables for color palette */
+
+:root {
+    --neonRed: #ff3131;
+    --neonBlue: #04d9ff; 
+    --neonPurple: #8956f1;
+    --neonGreen: #68fe9a;
+    --offBlack: #1b1c1e; 
+    --offWhite: #fdfdfd; 
+}
+
+/* Home Page */
+
+.home_body {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/neon_road.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100%;
+    padding: 0;
+    color: var(--offWhite);
+}
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.box {
+    height: 60px;
+    background-color: var(--offBlack);
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+.navbar {
+    line-height: 60px;
+}
+
+/* Formatting links inside navbar */
+
+.navbar a {
+    text-decoration: none;
+    margin: 30px;
+    color: var(--offWhite);
+    padding: 17px 20px;
+}
+
+/* Effects for links inside nav bar */
+
+.home:hover {
+    border: 1px solid var(--neonBlue);
+    box-shadow: 3px 3px 3px var(--neonBlue);
+}
+
+.about:hover {
+    border: 1px solid var(--neonRed);
+    box-shadow: 3px 3px 3px var(--neonRed);   
+}
+
+.resume:hover {
+    border: 1px solid var(--neonPurple);
+    box-shadow: 3px 3px 3px var(--neonPurple);
+}
+
+.portfolio:hover {
+    border: 1px solid var(--neonGreen);
+    box-shadow: 3px 3px 3px var(--neonGreen);
+}
+
+/* Text over background image */
+
+.overlay {
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    color: var(--offWhite);
+    padding-top: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Name appears first, then blurb */
+
+.name {
+    padding-right: 5%;
+    padding-left: 5%;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 80px;
+    animation: neon 2s ease forwards;
+}
+
+.intro {
+    font-size: 20px;
+    padding-top: 3%;
+    padding-right: 15%;
+    padding-left: 15%;
+    opacity: 0;
+    animation: appear 2s ease-out 1.5s forwards;
+}
+
+@keyframes neon {
+    100% {
+        color: var(-offWhite);
+        text-shadow: 0px 0px 20px #ffffbf; 
+    }
+}
+
+@keyframes appear {
+    100% {
+        opacity: 1;
+    }
+}
+
+/* About Page */
+
+.about_body {
+    text-align: center;
+    min-height: 100%;
+    padding: 0;
+    background-color: var(--offBlack);
+}
+
+.photo_box {
+    min-height: 40vh;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b0082+0,ff3131+50,fff01f+100&0.75+0,0.75+100 */
+    background: -moz-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%, rgba(255,49,49,0.75) 50%, rgba(255,240,31,0.75) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf4b0082', endColorstr='#bffff01f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
+    position: relative;
+}
+
+.photo_box h1 {
+    font-size: 32px;
+    color: var(--offWhite);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Titillium Web', sans-serif;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--offWhite);
+}
+
+.about_main p {
+    margin: 50px 200px 50px 200px;
+    color: var(--offWhite);
+    text-align: left;
+}
+
+.my_photo {
+    position: relative;
+    /* float: left; */
+    width: 15vw;
+    display: block;
+}
+
+.offset_borders {
+    width: 15vw;
+    margin: 100px auto;
+    position: relative;
+    float: left;
+    margin: 5% 15%;
+}
+
+.offset_borders::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--offWhite);
+    position: absolute;
+    box-sizing: border-box;
+    top: 40px;
+    left: -20px;
+    z-index: -2;
+}
+
+.offset_borders::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--neonRed);
+    position: absolute;
+    box-sizing: border-box;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+}
