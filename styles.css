@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Jost', sans-serif; 
-    font-size: 0.75vw;
+    font-size: 0.8vw;
 }
 
 /* Global variables for color palette */
@@ -168,12 +168,13 @@
 }
  
 .about_main p {
-    margin: 5vw 20vw;
+    margin: 2vw 20vw;
     color: var(--offWhite);
     text-align: left;
 }
 
 .my_photo {
+    margin: 2vw; /* Added */
     position: relative;
     /* float: left; */
     width: 15vw;
@@ -215,15 +216,7 @@
 
 /* Resume page */ 
 
-.resume_body {
-    text-align: center; 
-    min-height: 100%;
-    padding: 0;
-    background-color: var(--offWhite);
-    margin: 50px 200px 50px 200px;
-    color: var(--offBlack);
-}
-    
+
 
 
     
