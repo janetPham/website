@@ -171,7 +171,6 @@
     float: right; 
     display: block;
     width: 30vw;
-    margin: 100px 250px; 
 }
 
 .about_main p {  
@@ -188,7 +187,7 @@
 
 /* Funky border around my photo :0 */ 
 .offset_borders {
-    width: 300px; /*15 vw*/
+    width: 250px; /*15 vw*/
     margin: 100px auto;
     position: relative;
     float: left;
