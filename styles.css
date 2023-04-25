@@ -168,7 +168,11 @@
 
 .description {
     float: right;
-    display: inline-block;
+    position: fixed;
+    top: 50px; 
+    right: 200px; 
+    bottom: 50px;
+    left: 200px;
 }
 
 .about_main p {  
@@ -183,7 +187,7 @@
     display: block;
 }
 
-/* Funky border around my photo */ 
+/* Funky border around my photo :0 */ 
 .offset_borders {
     width: 15vw;
     margin: 100px auto;
