@@ -38,7 +38,7 @@
 }
 
 .box {
-    height: 5vh; /*50px with line 49*/
+    height: 10vh; /*50px with line 49*/
     background-color: var(--offBlack);
     width: 100%;
     z-index: 12;
@@ -46,7 +46,7 @@
 }
 
 .navbar {
-    line-height: 5vh;
+    line-height: 10vh;
 }
 
 /* Formatting links inside navbar */
