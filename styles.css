@@ -166,13 +166,13 @@
     color: var(--offWhite);
 }
 
-.description {
-    align-items: center;
-    justify-content: center; 
+.description { 
     width: 75vw; 
     margin: auto;  
     display: flex; 
     flex-direction: row; 
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .text {
