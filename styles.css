@@ -169,14 +169,15 @@
 .description {
     align-items: center;
     justify-content: center; 
-    margin-top: 100px; 
-    margin-right: 20vw;
-    margin-left: 20vw;
+    margin-top: 20vh; 
+    margin-right: 10vw;
+    /* margin-left: 20vw; */ 
 }
 
 .about_main p {
     color: var(--offWhite);
     text-align: left;  
+    padding: 10vw; /* Added */ 
 }
 
 .my_photo { 
@@ -189,7 +190,6 @@
     position: relative;
     float: left;
     margin-right: 100px;
-    margin-bottom: 75px;
 }
 
 .offset_borders::before {
