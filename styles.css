@@ -1,5 +1,7 @@
 /* Applies throughout whole document */
 
+/* Conversion: 13.3 for vw and 12 for vh */
+
 * {
     margin: 0;
     padding: 0;
@@ -166,6 +168,7 @@
 .description {
     position: relative;
     float: right; 
+    height: 50vh;
 }
 
 .about_main p {
@@ -220,6 +223,12 @@
     z-index: -1;
 }
 
+/* Resume page */ 
+
 .resume_body {
-    text-align: center; 
+    text-align: center;
+}
+
+.resume_main {
+    text-align: left; 
 }
