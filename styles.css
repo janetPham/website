@@ -169,15 +169,14 @@
 .description {
     align-items: center;
     justify-content: center; 
-    margin-top: 5vh auto;
-    margin-bottom: 5vh auto; 
-    margin-right: 10vw auto;
-    margin-left: 10vw auto; 
+    width: 30vw; 
+    margin: auto:  
 }
 
 .about_main p {
     color: var(--offWhite);
     text-align: left;  
+    margin: auto; 
 }
 
 .my_photo { 
