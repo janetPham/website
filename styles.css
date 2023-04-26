@@ -169,15 +169,16 @@
 .description {
     align-items: center;
     justify-content: center; 
-    margin-top: 20vh; 
+    margin-top: 5vh; 
     margin-right: 10vw;
-    /* margin-left: 20vw; */ 
+    margin-left: 10vw;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh; 
 }
 
 .about_main p {
     color: var(--offWhite);
     text-align: left;  
-    padding: 10vw; /* Added */ 
 }
 
 .my_photo { 
