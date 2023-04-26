@@ -148,7 +148,7 @@
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b0082+0,ff3131+50,fff01f+100&0.75+0,0.75+100 */
     background: -moz-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%, rgba(255,49,49,0.75) 50%, rgba(255,240,31,0.75) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(135deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+,        Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf4b0082', endColorstr='#bffff01f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
     position: relative;
 }
@@ -169,20 +169,25 @@
 .description {
     align-items: center;
     justify-content: center; 
-    width: 60vw; 
+    width: 75vw; 
     margin: auto;  
+    display: flex; 
+    flex-direction: row; 
+}
+
+.text {
+    display: flex; 
+    flex-direction: column; 
 }
 
 .about_main p {
     color: var(--offWhite);
-    text-align: left;  
-    margin: auto;  
+    text-align: left;    
 }
 
 .my_photo { 
     width: 200px; 
-    float: left;
-    margin-bottom: 100px; 
+    float: left; 
 }
 
 .offset_borders {
