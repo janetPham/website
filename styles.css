@@ -169,11 +169,10 @@
 .description {
     align-items: center;
     justify-content: center; 
-    margin-top: 5vh; 
-    margin-right: 10vw;
-    margin-left: 10vw;
-    padding-top: 2.5vh;
-    padding-bottom: 2.5vh; 
+    margin-top: 5vh auto;
+    margin-bottom: 5vh auto; 
+    margin-right: 10vw auto;
+    margin-left: 10vw auto; 
 }
 
 .about_main p {
