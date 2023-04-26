@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Jost', sans-serif; 
-    font-size: 14px;
+    font-size: 1.05vw;
 }
 
 /* Global variables for color palette */
@@ -29,18 +29,18 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    min-height: 100%;
+    min-height: 100vh;
     padding: 0;
     color: var(--offWhite);
 }
 
 .header {
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
 }
 
 .box {
-    height: 60px;
+    height: 12vh;
     background-color: var(--offBlack);
     width: 100%;
     z-index: 12;
@@ -48,7 +48,7 @@
 }
 
 .navbar {
-    line-height: 60px;
+    line-height: 12vh;
 }
 
 /* Formatting links inside navbar */
@@ -89,8 +89,8 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: flex; 
     flex-direction: column;
     color: var(--offWhite);
@@ -107,12 +107,12 @@
     padding-left: 5%;
     font-family: 'Playfair Display', serif;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 80px;
+    font-size: 6vw;
     animation: neon 2s ease forwards;
 }
 
 .intro {
-    font-size: 20px;
+    font-size: 1.5vw;
     padding-top: 3%;
     padding-right: 15%;
     padding-left: 15%;
@@ -153,7 +153,7 @@
 }
 
 .photo_box h1 {
-    font-size: 32px;
+    font-size: 2.4vw;
     color: var(--offWhite);
     text-align: center;
     font-family: 'Playfair Display', serif;
