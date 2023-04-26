@@ -189,6 +189,7 @@
     position: relative;
     float: left;
     margin-right: 100px;
+    margin-bottom: 100px;
 }
 
 .offset_borders::before {
