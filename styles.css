@@ -170,13 +170,14 @@
     align-items: center;
     justify-content: center; 
     width: 30vw; 
-    margin: auto:  
+    margin: auto;  
 }
 
 .about_main p {
     color: var(--offWhite);
     text-align: left;  
     margin: auto; 
+    float: right; 
 }
 
 .my_photo { 
