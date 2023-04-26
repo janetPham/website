@@ -169,20 +169,20 @@
 .description {
     align-items: center;
     justify-content: center; 
-    width: 30vw; 
+    width: 60vw; 
     margin: auto;  
 }
 
 .about_main p {
     color: var(--offWhite);
     text-align: left;  
-    margin: auto; 
-    float: right; 
+    margin: auto;  
 }
 
 .my_photo { 
     width: 200px; 
-    float: left; 
+    float: left;
+    margin-bottom: 100px; 
 }
 
 .offset_borders {
