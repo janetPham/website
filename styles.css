@@ -170,8 +170,8 @@
     align-items: center;
     justify-content: center; 
     margin-top: 100px; 
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 10vw;
+    margin-left: 10vw;
 }
 
 .about_main p {
