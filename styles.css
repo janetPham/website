@@ -155,7 +155,7 @@
     background: linear-gradient(135deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+,        Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf4b0082', endColorstr='#bffff01f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
     position: fixed;
-    z=index: 12; 
+    z-index: 12; 
 }
 
 .photo_box h1 {
