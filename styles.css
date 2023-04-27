@@ -136,6 +136,7 @@
 /* About Page */
 
 .about_body {
+    text-align: center;
     min-height: 100%;
     padding: 0;
     background-color: var(--offBlack);
