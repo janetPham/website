@@ -141,13 +141,9 @@
     text-align: center;
     min-height: 100%;
     padding: 0;
-    /* background-color: var(--offBlack); */ 
+    background-color: var(--offBlack);
     color: var(--offWhite);
 }
-
-.about_main {
-    display: block; 
-} 
 
 .banner {
     min-height: 250px;   
@@ -180,7 +176,8 @@
     width: 100%;
     flex-direction: row; 
     /* top: 50%; 
-    left: 50%; */
+    left: 50%; */ 
+    padding: 150px; 
     transform: translate(-50%, -50%);
 }
 
