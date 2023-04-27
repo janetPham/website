@@ -143,19 +143,17 @@
     padding: 0;
     background-color: var(--offBlack);
     color: var(--offWhite);
+    display: block; 
 }
 
 .photo_box {
-    min-height: 250px;
-    width: 100%; 
-    margin: 0 auto; 
+    min-height: 250px;  
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b0082+0,ff3131+50,fff01f+100&0.75+0,0.75+100 */
     background: -moz-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%, rgba(255,49,49,0.75) 50%, rgba(255,240,31,0.75) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+,        Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf4b0082', endColorstr='#bffff01f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
-    position: fixed;
-    z-index: 12; 
+    position: relative; 
 }
 
 .photo_box h1 {
@@ -164,10 +162,11 @@
     font-family: 'Playfair Display', serif;
     font-family: 'Titillium Web', sans-serif;
     position: absolute;
-    top: 62%;
-    left: 50%;
+    /* top: 62%;
+    left: 50%; */ 
     transform: translate(-50%, -50%);
     color: var(--offWhite);
+    display: inline-block; 
 }
 
 .description { 
@@ -178,20 +177,16 @@
     width: 100%;
     display: flex; 
     flex-direction: row;
-    padding-top: 30px;
-    top: 50%;
-    left: 50%;
+    margin: 100px auto;
+    /* top: 50%;
+    left: 50%; */ 
     transform: translate(-50%, -50%);
 }
 
 .text {
-    display: flex; 
-    flex-direction: column; 
-}
-
-.about_main p {
+    display: block;  
     text-align: left;    
-}
+} 
 
 .my_photo { 
     width: 200px; 
