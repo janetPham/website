@@ -136,11 +136,10 @@
 /* About Page */
 
 .about_body {
-    text-align: center;
     min-height: 100%;
     padding: 0;
     background-color: var(--offBlack);
-    margin-bottom: 100px;
+    color: var(--offWhite);
 }
 
 .photo_box {
@@ -155,7 +154,6 @@
 
 .photo_box h1 {
     font-size: 32px;
-    color: var(--offWhite);
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-family: 'Titillium Web', sans-serif;
@@ -186,7 +184,6 @@
 }
 
 .about_main p {
-    color: var(--offWhite);
     text-align: left;    
 }
 
