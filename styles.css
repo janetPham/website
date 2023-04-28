@@ -145,7 +145,7 @@
     color: var(--offWhite);
 }
 
-.banner {
+/* .banner {
     min-height: 250px;   
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b0082+0,ff3131+50,fff01f+100&0.75+0,0.75+100 */
     background: -moz-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%, rgba(255,49,49,0.75) 50%, rgba(255,240,31,0.75) 100%); /* FF3.6-15 */
@@ -223,7 +223,7 @@
     top: 25px;
     left: 25px;
     z-index: -1;
-}
+} */ 
 
 /* Resume page */ 
 
@@ -234,3 +234,58 @@
 .resume_main {
     text-align: left; 
 }
+
+/* Portfolio Page */
+
+.about_body {
+    text-align: center; 
+    color: var(--offWhite);
+}
+
+.about_main {
+    margin-top: 60px;  
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    margin: 0; 
+} 
+
+.banner {
+    min-height: 250px;   
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b0082+0,ff3131+50,fff01f+100&0.75+0,0.75+100 */
+    background: -moz-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%, rgba(255,49,49,0.75) 50%, rgba(255,240,31,0.75) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+,        Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf4b0082', endColorstr='#bffff01f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Titillium Web', sans-serif;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--offWhite); 
+    display: inline;
+} 
+
+.content { 
+    padding: 100px; 
+    background-color: var(--offBlack);
+}
+
+.description {
+    display: flex;
+    display-direction: row;
+    align-items: center;
+    position: absolute;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+    
+    
+    
