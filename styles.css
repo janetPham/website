@@ -141,6 +141,7 @@
 .about_body {
     text-align: center;
     color: var(--offWhite);
+    background-color: var(--offBlack); 
 }
 
 .about_main {
@@ -160,6 +161,7 @@
     background: linear-gradient(135deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+,        Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf4b0082', endColorstr='#bffff01f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
     position: relative;  
+    overflow: hidden; 
 }
 
 .adj1 {
@@ -172,13 +174,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: inline;
-    overflow: hidden; 
 }
 
 .description { 
     background-color: var(--offBlack);
-    padding: 50px;
-    height: 70vh; 
+    padding: 50px; 
     text-align: left; 
     display: flex; 
     align-items: center;
@@ -186,7 +186,7 @@
 }
 
 .text {  
-    margin-left: 100px; 
+    margin-left: 50px; 
 } 
 
 .my_photo { 
