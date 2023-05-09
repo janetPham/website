@@ -192,6 +192,10 @@
     float: left; 
 }
 
+.container {
+    margin-left: 25px; 
+}
+
 .offset_borders {
     width: 200px;
     position: relative;
