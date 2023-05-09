@@ -20,7 +20,19 @@
     --offWhite: #fdfdfd; 
 }
 
-/* Banner */ 
+/* Home Page */
+
+.home_body {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/neon_road.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100%;
+    padding: 0;
+    color: var(--offWhite);
+}
 
 .header {
     width: 100%;
@@ -33,8 +45,7 @@
     width: 100%;
     z-index: 12;
     position: fixed;
-    overflow: hidden;
-    text-align: center; 
+    overflow: hidden; 
 }
 
 .navbar {
@@ -70,20 +81,6 @@
 .portfolio:hover {
     border: 1px solid var(--neonGreen);
     box-shadow: 3px 3px 3px var(--neonGreen);
-}
-
-/* Home Page */
-
-.home_body {
-    text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/neon_road.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100%;
-    padding: 0;
-    color: var(--offWhite);
 }
 
 /* Text over background image */
@@ -139,56 +136,56 @@
 
 /* About Page */
 
+/* About Page */
+
 .about_body {
     text-align: center;
-    color: var(--offWhite);
-    background-color: var(--offBlack); 
+    min-height: 100%;
+    padding: 0;
+    background-color: var(--offBlack);
+    /* margin-bottom: 100px; */
 }
 
-.about_main {
-    display: flex; 
-    flex-direction: column; 
-    width: 100%; 
-    margin-top: 60px; 
-    margin: 0; 
-}
-
-.banner {
-    margin-top: 60px; 
-    min-height: 30vh;   
+.photo_box {
+    min-height: 250px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b0082+0,ff3131+50,fff01f+100&0.75+0,0.75+100 */
     background: -moz-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%, rgba(255,49,49,0.75) 50%, rgba(255,240,31,0.75) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+,        Safari7+ */
+    background: linear-gradient(135deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf4b0082', endColorstr='#bffff01f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
-    position: relative;  
-    overflow: hidden; 
+    position: relative;
 }
 
-.adj1 {
+.photo_box h1 {
     font-size: 32px;
+    color: var(--offWhite);
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-family: 'Titillium Web', sans-serif;
     position: absolute;
-    top: 50%;
+    top: 62%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: inline;
+    color: var(--offWhite);
 }
 
-.description { 
-    background-color: var(--offBlack);
-    padding: 50px; 
-    text-align: left; 
+.description {
     display: flex; 
+    flex-direction: row; 
     align-items: center;
-    overflow: hidden; 
+    justify-content: center; 
+    margin: 10vw;   
 }
 
-.text {  
-    margin-left: 50px; 
-} 
+.text {
+    padding-left: 75px; 
+    flex-direction: column;  
+}
+
+.about_main p {
+    color: var(--offWhite);
+    text-align: left;  
+}
 
 .my_photo { 
     width: 200px; 
@@ -199,7 +196,9 @@
     width: 200px;
     position: relative;
     float: left;
-    margin-right: 100px;
+    /* margin-right: 5vw;
+    margin-bottom: 75px;
+    margin-left: 5vw;  */
 }
 
 .offset_borders::before {
@@ -209,7 +208,7 @@
     border: 3px solid var(--offWhite);
     position: absolute;
     box-sizing: border-box;
-    top: 50px;
+    top: -25px;
     left: -25px;
     z-index: -2;
 }
@@ -224,7 +223,14 @@
     top: 25px;
     left: 25px;
     z-index: -1;
-} 
+}
 
 /* Resume page */ 
 
+.resume_body {
+    text-align: center;
+}
+
+.resume_main {
+    text-align: left; 
+}
