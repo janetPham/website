@@ -105,8 +105,7 @@
 
 .name {
     padding-right: 5%;
-    padding-left: 5%;
-    font-family: 'Playfair Display', serif;
+    padding-left: 5%; 
     font-family: 'Titillium Web', sans-serif;
     font-size: 80px;
     animation: neon 2s ease forwards;
@@ -136,8 +135,6 @@
 
 /* About Page */
 
-/* About Page */
-
 .about_body {
     text-align: center;
     min-height: 100%;
@@ -157,7 +154,7 @@
 }
 
 .photo_box h1 {
-    font-size: 32px;
+    font-size: 40px;
     color: var(--offWhite);
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -175,6 +172,7 @@
     align-items: center;
     justify-content: center; 
     margin: 10vw;   
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .text {
@@ -187,13 +185,13 @@
     text-align: left;  
 }
 
+.container {
+    margin-left: 25px; 
+}
+
 .my_photo { 
     width: 200px; 
     float: left; 
-}
-
-.container {
-    margin-left: 25px; 
 }
 
 .offset_borders {
@@ -237,4 +235,8 @@
 
 .resume_main {
     text-align: left; 
+}
+
+.portfolio_body {
+    text-align: center; 
 }
