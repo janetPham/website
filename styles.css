@@ -1,10 +1,8 @@
 /* Applies throughout whole document */
 
-/* Conversion: 13.3 for vw and 12 for vh */
-
 * {
     margin: 0;
-    padding: 0;
+    padding: 0;  
     font-family: 'Jost', sans-serif; 
     font-size: 16px;
 }
@@ -16,6 +14,7 @@
     --neonBlue: #04d9ff; 
     --neonPurple: #8956f1;
     --neonGreen: #68fe9a;
+    --neonYellow: #ffffbf; 
     --offBlack: #1b1c1e; 
     --offWhite: #fdfdfd; 
 }
@@ -61,6 +60,10 @@
     padding: 17px 20px;
 }
 
+.wrapper {
+    display: none;
+}
+
 /* Effects for links inside nav bar */
 
 .home:hover {
@@ -83,8 +86,105 @@
     box-shadow: 3px 3px 3px var(--neonGreen);
 }
 
-/* Text over background image */
+@media screen and (max-width: 650px) {
+    .header {
+        display: none;
+    }
 
+    /* Inspired by: */ 
+
+    .wrapper{
+        display: inline;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: var(--offBlack);
+        clip-path: circle(25px at calc(100% - 45px) 45px);
+        transition: all 0.3s ease-in-out;
+    }
+    #active:checked ~ .wrapper{
+        clip-path: circle(75%);
+    }
+    .menu-btn{
+        position: absolute;
+        z-index: 2;
+        right: 20px;
+        top: 20px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        font-size: 20px;
+        color: var(--offWhite);
+        cursor: pointer;
+        background: var(--offWhite);
+        transition: all 0.3s ease-in-out;
+    }
+    .fa-bars-staggered {
+        color: var(--offBlack);
+        font-size: 25px;
+        margin: 13px;
+    }
+    #active:checked ~ .menu-btn{
+        color: var(--offWhite);
+    }
+    .wrapper ul{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+    }
+    .wrapper ul li{
+        margin: 15px 0;
+    }
+    .wrapper ul li a{
+        color: none;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 21px 25px;
+        color: var(--offWhite);
+        position: relative;
+        line-height: 82px;
+        transition: all 0.3s ease;
+    }
+    .wrapper ul li a:after{
+        position: absolute;
+        content: "";
+        width: 104%;
+        height: 110%;
+        left: -2%;
+        transform: scaleY(0);
+        z-index: -1;
+        animation: rotate 1.5s linear infinite;
+        transition: transform 0.3s ease;
+    }
+    .wrapper ul li a:hover:after{
+        transform: scaleY(1);
+    }
+    .wrapper ul li a:hover{
+        color: var(--offWhite);
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+    @keyframes rotate {
+        0%{
+            filter: hue-rotate(0deg);
+        }
+        100%{
+            filter: hue-rotate(360deg);
+        }
+    }
+}
+    
+/* Text over background image */
+    
 .overlay {
     position: absolute;
     text-align: center;
@@ -99,6 +199,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: -1; 
 }
 
 /* Name appears first, then blurb */
@@ -123,7 +224,7 @@
 @keyframes neon {
     100% {
         color: var(-offWhite);
-        text-shadow: 0px 0px 20px #ffffbf; 
+        text-shadow: 0px 0px 20px var(--neonYellow); 
     }
 }
 
@@ -140,7 +241,11 @@
     min-height: 100%;
     padding: 0;
     background-color: var(--offBlack);
-    /* margin-bottom: 100px; */
+}
+
+.about_main {
+    z-index: -1;
+    position: absolute;
 }
 
 .photo_box {
@@ -151,7 +256,11 @@
     background: linear-gradient(135deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf4b0082', endColorstr='#bffff01f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
     position: relative;
+    margin-top: 32px;
+    overflow: hidden;
 }
+
+/* Check if I need to add another breakpoint to */ 
 
 .photo_box h1 {
     font-size: 40px;
@@ -160,10 +269,9 @@
     font-family: 'Playfair Display', serif;
     font-family: 'Titillium Web', sans-serif;
     position: absolute;
-    top: 62%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--offWhite);
 }
 
 .description {
@@ -182,7 +290,7 @@
 
 .about_main p {
     color: var(--offWhite);
-    text-align: left;  
+    text-align: left; 
 }
 
 .container {
@@ -198,9 +306,6 @@
     width: 200px;
     position: relative;
     float: left;
-    /* margin-right: 5vw;
-    margin-bottom: 75px;
-    margin-left: 5vw;  */
 }
 
 .offset_borders::before {
@@ -227,16 +332,142 @@
     z-index: -1;
 }
 
+@media screen and (max-width: 650px) {
+    .photo_box {
+        margin-top: 0; 
+    }
+
+    .container {
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        justify-content: center;
+        align-items: center; 
+        margin: 75px; 
+    }
+
+    .text {
+        padding-left: 0;
+    }
+
+    .offset_borders {
+        margin-bottom: 75px; 
+        place-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 /* Resume page */ 
 
 .resume_body {
     text-align: center;
+    min-height: 100%;
+    background-color: var(--offWhite);
 }
 
 .resume_main {
-    text-align: left; 
+    color: var(--offBlack);
+    font-family: 'Titillium Web', sans-serif;
+    left: 2%;
+    z-index: -1;
+    position: absolute; 
 }
 
-.portfolio_body {
-    text-align: center; 
+.resume_content {
+    text-align: left;
+    margin: auto;
+    width: 70%;  
+    padding: 100px 0px 70px 0px;
 }
+
+.my_name {
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.resume_headings {
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 650px) {
+    .resume_content {
+        padding-top: 70px;
+    }
+}
+
+/* Portfolio Page */ 
+
+.portfolio_body {
+    text-align: center;
+    min-height: 100%;
+    padding: 0; 
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/neon_lines.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+} 
+
+.portfolio_main {
+    text-align: center; 
+    color: var(--offWhite);
+    font-family: 'Titillium Web', sans-serif;
+    margin: auto;  
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project_container {
+    display: grid;
+    place-self: center; 
+    place-items: center;
+    width: 90vw;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 120px 0 60px 0;
+}
+
+.projects {
+    height: 400px;
+    width: 250px;  
+    /* The following code for the glassmorphism effect was implemented using: https://hype4.academy/tools/glassmorphism-generator */ 
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+} 
+
+.project_img {
+    height: 275px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 10px;
+}  
+
+.project_heading {
+    margin: 0px 20px 20px 20px; 
+}
+
+@media screen and (max-width: 650px) {
+    .project_container {
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        justify-content: center;
+        align-items: center; 
+        margin-top: 1275px;
+    }
+} 
