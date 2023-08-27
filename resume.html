@@ -9,7 +9,13 @@
   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Titillium+Web&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="resume_body">
     <div class="header">
@@ -21,44 +27,85 @@
                 <a href="portfolio.html" class="portfolio">Portfolio</a>
             </div>
         </div>
+    </div>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn">
+        <i class="fa-solid fa-bars-staggered"></i>
+    </label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="about.html" class="about">About</a></li>
+            <li><a href="resume.html" class="resume">Resumé</a></li>
+            <li><a href="portfolio.html" class="portfolio">Portfolio</a></li>
+        </ul>
+    </div>
         <div class="resume_main">
-            <h1>Janet Pham</h1>
-            <h2 class="qualifications">Summary of Qualifications</h2>
+            <div class="resume_content">
+                <h1 class="my_name">Janet Pham</h1>
+            <br>
+            <h2 class="resume_headings">Summary of Qualifications</h2>
             <br>
                 <ul>
-                    <li>Software: Python, C++, ROBOTC, HTML/CSS</li>
-                    <li>Tools: AutoCAD, SolidWorks</li>
-                    <li>Proficient in Microsoft Word, PowerPoint, Excel, Power BI, and Outlook</li>
+                    <li>Software: Python, C++, OpenCV, ROBOTC, HTML/CSS, Git, KUKA Robot Language</li>
+                    <li>Tools: AutoCAD, SolidWorks, Altium Designer, Studio 5000 Logix Designer, SIMATIC Automation Tool, oscilloscope</li>
+                    <li>Proficient in Microsoft Word, PowerPoint, Excel, Outlook, and Power BI</li>
                     <li>Strong time-management, collaborative, and problem-solving skills in role as club leader</li>
                 </ul>
             <br>
-            <h2 class="education">Education</h2>
+            <h2 class="resume_headings">Education</h2>
             <br>
                 <h3>BASc in Mechatronics Engineering</h3>
-                <h3>Sep. 2022 – Expected 2027</h3>
                 <h3>University of Waterloo – Waterloo, ON</h3>
+                <h3>Sep 2022 – Expected 2027</h3>
                     <ul>
                         <li>Receiving the University of Waterloo President’s Scholarship of Distinction for entrance average over 95%</li>
                         <li>Receiving the Don Walker Scholarship from Magna International for maintaining overall average above 70% and working to improve future of mobility in automotive manufacturing</li>
+                        <li>Relevant courses: engineering graphics & design, data structures & algorithms, circuits, materials science & engineering</li>
                     </ul>
             <br>
                 <h3>IB Diploma Graduate</h3>
-                <h3>Sep. 2018 – Jun. 2022</h3>
                 <h3>St. Francis Xavier Secondary School – Mississauga, ON</h3>
+                <h3>Sept 2018 – Jun 2022</h3>
             <br>
-            <h2 class="work">Work Experience</h2>
+            <h2 class="resume_headings">Work Experience</h2>
             <br>
-                <h3>Manufacturing Engineer Intern</h3> 
-                <h3>Jan. 2023 – Apr. 2023</h3> 
+                <h3>Manufacturing Engineer Intern</h3>  
                 <h3>Magna Karmax Heavy Stamping – Milton, ON</h3>
+                <h3>Jan 2023 – Apr 2023</h3>
                 <ul>
-                    <li>Analyzed data and created Power BI dashboard of base building gas consumption to identify solutions to reduce energy usage, resulting in $53 000 in real savings from 2023 to date</li>
-                    <li>Measured cycle times of different dies in hot stamping presses and discussed solutions to decrease cycle times by 10-20% to meet increase in demand for partnering OEM by 2024</li>
-                    <li>Mapped, trained, and troubleshot AGV robot to automate line product transfer, improving missions by participating in Kaizen implementation plans</li>
+                    <li>Implemented, troubleshot, and participated in Kaizen planning of autonomous mobile robot to automate line product transfer, improving mission speed up to 50%</li>
+                    <li>Created Power BI dashboard of base building gas consumption and reduced energy usage, saving $53 000 to date</li>
+                    <li>Analyzed cycle times of dies in hot stamping presses, proposing solution to decrease by up to 20% for new demand</li>
+                    <li>Wrote basic programs in ladder logic for Allen-Bradley PLC and used KRL to maneuver KUKA Robot</li>
                 </ul> 
             <br>
-            <h2 class="extra">Volunteer and Extracurricular Experience</h2>
+            <h2 class="resume_headings">Volunteer and Extracurricular Experience</h2>
+            <br>
+                <h3>Participant</h3>
+                <h3>Toyota Innovation Challenge</h3>
+                <h3>May 2023</h3>
+                <ul>
+                    <li>Implemented solution to automate quality inspection of sticker coverage over vehicle body holes</li>
+                    <li>Developed OpenCV Python program using libraries such as cv2, Numpy, and Matplotlib to detect holes and centres</li>
+                    <li>Integrated Orbbec ASTRA 3D depth camera to detect and differentiate holes and stickers </li>
+                </ul>
+            <br>
+                <h3>Co-President</h3>
+                <h3>Xavier Science Club</h3>
+                <h3>Sep 2019 - Jun 2022</h3>
+                <ul>
+                    <li>Planned, financed, and organized experiments, simulations, and debates to explain relevant concepts in biology, chemistry, and physics to high school students</li>
+                    <li>Designed graphics and hosted bake sale charity events to promote engagement through social media</li>
+                </ul>
+            <br>
+                <h3>Volunteer</h3>
+                <h3>Never2Old2Connect</h3>
+                <h3>Nov 2020 - Jun 2022</h3>
+                <ul>
+                    <li>Organized Music Night, Bingo Night, and Armchair Travel for senior homes during COVID-19 pandemic</li>
+                </ul>
+            </div>
         </div> 
-    </div> 
 </body>
 </html>
