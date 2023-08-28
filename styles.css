@@ -489,7 +489,6 @@
 
 @media screen and (max-width: 1100px) {
     .project_container {
-        height: auto;
         width: 80vw;
         margin-top: 0;
         padding-top: 500px;
@@ -506,6 +505,5 @@
         align-items: center; 
         margin-top: 1275px;
         padding-top: 0;
-        padding-bottom: 0;
     }
 } 
