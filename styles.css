@@ -19,19 +19,7 @@
     --offWhite: #fdfdfd; 
 }
 
-/* Home Page */
-
-.home_body {
-    text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/neon_road.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100%;
-    padding: 0;
-    color: var(--offWhite);
-}
+/* Navbar formatting */ 
 
 .header {
     width: 100%;
@@ -91,27 +79,26 @@
         display: none;
     }
 
-    /* Inspired by: */ 
+    /* Hamburger bar menu inspired by: https://codepen.io/yuhomyan/pen/WNwGywp */ 
 
     .wrapper{
         display: inline;
         position: fixed;
-        top: 0;
-        left: 0;
         height: 100%;
         width: 100%;
+        right: 0;
         background: var(--offBlack);
         clip-path: circle(25px at calc(100% - 45px) 45px);
-        transition: all 0.3s ease-in-out;
+        transition: all 0.25s ease-in-out;
     }
     #active:checked ~ .wrapper{
-        clip-path: circle(75%);
+        clip-path: circle(100%);
     }
     .menu-btn{
         position: absolute;
-        z-index: 2;
-        right: 20px;
+        z-index: 1;
         top: 20px;
+        right: 20px;
         height: 50px;
         width: 50px;
         text-align: center;
@@ -182,6 +169,20 @@
         }
     }
 }
+
+/* Home Page */
+
+.home_body {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/neon_road.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100%;
+    padding: 0;
+    color: var(--offWhite);
+}
     
 /* Text over background image */
     
@@ -218,7 +219,7 @@
     padding-right: 15%;
     padding-left: 15%;
     opacity: 0;
-    animation: appear 2s ease-out 1.5s forwards;
+    animation: appear 1.5s ease-out 1.5s forwards;
 }
 
 @keyframes neon {
@@ -286,7 +287,7 @@
 
 .text {
     padding-left: 75px; 
-    flex-direction: column;  
+    flex-direction: column;
 }
 
 .about_main p {
@@ -333,14 +334,30 @@
     z-index: -1;
 }
 
+@media screen and (max-width: 1000px) {
+    .description {
+        display: inline-block;
+        padding: 10px 0;   
+        place-items: center;
+    }
+    .container {
+        float: left; 
+        margin: 30px 75px 75px 40px; 
+    }
+    .text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .photo_box {
         margin-top: 0; 
     }
 
     .container {
-        margin-top: 25px;
-        margin-left: 0;
+        margin: 25px 0 0 0; 
+        float: none; 
     }
 
     .description {
@@ -349,14 +366,16 @@
         place-content: center;
         justify-content: center;
         align-items: center; 
+        padding: 0;
         margin: 0 auto; 
         margin-top: 75px;
         margin-bottom: 75px;
-        width: 80%; 
+        width: 80%;  
     }
 
     .text {
         padding-left: 0;
+        padding-right: 0;
     }
 
     .offset_borders {
@@ -412,7 +431,7 @@
     text-align: center;
     min-height: 100%;
     padding: 0; 
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/neon_lines.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/neon_lines.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -426,6 +445,7 @@
     margin: auto;  
     z-index: -1;
     position: absolute;
+    padding-top: 100px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -435,17 +455,19 @@
     display: grid;
     place-self: center; 
     place-items: center;
+    height: auto;
     width: 90vw;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-column-gap: 50px;
     grid-row-gap: 50px;
-    padding: 120px 0 60px 0;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 .projects {
     height: 400px;
     width: 250px;  
-    /* The following code for the glassmorphism effect was implemented using: https://hype4.academy/tools/glassmorphism-generator */ 
+    /* Glassmorphism effect implemented using: https://hype4.academy/tools/glassmorphism-generator */ 
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
@@ -464,6 +486,15 @@
 .project_heading {
     margin: 0px 20px 20px 20px; 
 }
+
+@media screen and (max-width: 1100px) {
+    .project_container {
+        width: 80vw;
+        padding: 0;
+        margin-top: 500px;
+        margin-bottom: 60px;
+    }
+} 
 
 @media screen and (max-width: 650px) {
     .project_container {
