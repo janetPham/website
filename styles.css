@@ -451,16 +451,15 @@
     transform: translate(-50%, -50%);
 }
 
-.project_content {
+.project_container {
     display: grid;
     place-self: center; 
     place-items: center; 
     width: 90vw;
-    margin-top: 25px;
-    margin-bottom: 50px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-column-gap: 50px;
     grid-row-gap: 50px; 
+    padding-bottom: 40px;
     align-self: start;
 }
 
@@ -489,27 +488,20 @@
 
 @media screen and (max-width: 1100px) {
     .project_container {
-        display: flexbox;
-        height: 100vh;
-    }
-    .project_content {
         width: 80vw; 
-        margin-top: 150px;
+        margin-top: 500px;
+        margin-bottom: 60px;
     }
 } 
 
 @media screen and (max-width: 650px) {
     .project_container {
         display: flex;
-        margin-bottom: 25px;
-    }
-    .project_content {
-        display: flex;
         flex-direction: column;
         place-content: center;
         justify-content: center;
         align-items: center; 
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin-top: 1275px;
+        padding-bottom: 0;
     }
 } 
