@@ -400,9 +400,9 @@
     left: 2%;
     z-index: -1;
     position: absolute; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
+    display: table-cell; 
+    vertical-align: middle;
+    margin: auto; 
 }
 
 .resume_content {
