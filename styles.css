@@ -397,11 +397,7 @@
 .resume_main {
     color: var(--offBlack);
     font-family: 'Titillium Web', sans-serif;
-    left: 2%;
-    z-index: -1;
-    position: absolute; 
-    display: table-cell; 
-    vertical-align: middle;
+    left: 2%; 
     margin: auto; 
 }
 
@@ -423,6 +419,10 @@
 }
 
 @media screen and (max-width: 650px) {
+    .resume_main {
+        z-index: -1;
+        position: absolute;
+    }
     .resume_content {
         padding-top: 70px;
     }
