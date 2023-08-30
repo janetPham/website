@@ -400,16 +400,16 @@
     left: 2%;
     z-index: -1;
     position: absolute; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 
 .resume_content {
     text-align: left;
     margin: auto;
     width: 70%;  
-    padding: 100px 0px 70px 0px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    padding: 100px 0px 70px 0px; 
 }
 
 .my_name {
