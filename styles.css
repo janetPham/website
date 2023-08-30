@@ -397,14 +397,14 @@
 .resume_main {
     color: var(--offBlack);
     font-family: 'Titillium Web', sans-serif;
-    left: 2%; 
+    /* left: 2%; */  
     margin: auto; 
 }
 
 .resume_content {
     text-align: left;
     margin: auto;
-    width: 70%;  
+    width: 80%;  
     padding: 100px 0px 70px 0px; 
 }
 
@@ -460,6 +460,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 3rem;
     list-style-type: none;
+    place-items: center; 
 }
 
 .portfolio_main > ul > li > figure {
