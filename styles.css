@@ -490,3 +490,11 @@
     color: white;
     padding: 25px;
 }
+
+@media screen and (max-width: 650px) {
+    .portfolio_main {
+        width: 80%;
+        position: absolute; 
+        z-index: -1;
+    }
+} 
