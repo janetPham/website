@@ -84,19 +84,20 @@
     .wrapper{
         display: inline;
         position: fixed;
+        top: 0;
+        left: 0;
         height: 100%;
         width: 100%;
-        right: 0;
         background: var(--offBlack);
         clip-path: circle(25px at calc(100% - 45px) 45px);
         transition: all 0.25s ease-in-out;
     }
     #active:checked ~ .wrapper{
-        clip-path: circle(100%);
+        clip-path: circle(75%);
     }
     .menu-btn{
-        position: absolute;
-        z-index: 1;
+        position: fixed;
+        z-index: 2;
         top: 20px;
         right: 20px;
         height: 50px;
@@ -105,7 +106,7 @@
         line-height: 50px;
         border-radius: 50%;
         font-size: 20px;
-        color: var(--offWhite);
+        color: var(--offBlack);
         cursor: pointer;
         background: var(--offWhite);
         transition: all 0.3s ease-in-out;
@@ -114,9 +115,12 @@
         color: var(--offBlack);
         font-size: 25px;
         margin: 13px;
-    }
+    } 
     #active:checked ~ .menu-btn{
         color: var(--offWhite);
+    }
+    #active:checked ~ .menu-btn i:before{
+        content: "\f00d";
     }
     .wrapper ul{
         position: absolute;
@@ -134,10 +138,10 @@
         text-decoration: none;
         font-size: 20px;
         font-weight: 500;
-        padding: 21px 25px;
+        padding: 21px 25px; 
         color: var(--offWhite);
         position: relative;
-        line-height: 82px;
+        line-height: 82px;  
         transition: all 0.3s ease;
     }
     .wrapper ul li a:after{
@@ -146,6 +150,8 @@
         width: 104%;
         height: 110%;
         left: -2%;
+        top: -5%;
+        border-radius: 50px;
         transform: scaleY(0);
         z-index: -1;
         animation: rotate 1.5s linear infinite;
@@ -442,10 +448,6 @@
     margin: 0;
 } 
 
-.portfolio_container {
-    top: 50%;
-}
-
 .portfolio_main {
     padding: 3rem;
 }
@@ -495,7 +497,13 @@
         width: 80%;
         position: absolute; 
         z-index: -1;
-        left: 50%;
-        transform: translate(-50%, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .portfolio_main > ul {
+        justify-self: center;
+        align-self: center;
     }
 } 
