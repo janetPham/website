@@ -210,10 +210,8 @@
 
 /* Name appears first, then blurb */
 
-.name {
-    padding-right: 5%;
-    padding-left: 5%; 
-    padding-top: 40px;
+.name { 
+    margin-top: 40px;
     font-family: 'Titillium Web', sans-serif;
     font-size: 80px;
     animation: neon 2s ease forwards;
@@ -221,8 +219,8 @@
 
 .intro {
     font-size: 20px;
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 35px;
     padding-right: 15%;
     padding-left: 15%;
     opacity: 0;
@@ -234,8 +232,14 @@
     animation: appear 1.5s ease-out 2.5s forwards;
 }
 
+.name, .intro, .contact {
+    text-align: center;
+    align-items: center;
+}
+
 .fa-envelope, .fa-linkedin, .fa-github {
-    margin: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
     font-size: 30px;
 }
 
@@ -254,7 +258,7 @@
 
 @media screen and (max-width: 650px) {
     .name {
-       padding-top: 0;
+        margin-top: -40px;
     }
 }
 
