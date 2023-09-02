@@ -266,6 +266,8 @@
 @media screen and (max-height: 385px) {
     .overlay {
         height: unset; 
+        margin-top: 50px;
+        padding-bottom: 45px;
     }
 }
 
