@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;  
     font-family: 'Jost', sans-serif; 
-    font-size: 16px;
 }
 
 /* Global variables for color palette */
@@ -27,7 +26,7 @@
 }
 
 .box {
-    height: 62px;
+    height: 63px;
     background-color: var(--offBlack);
     width: 100%;
     z-index: 12;
@@ -36,6 +35,7 @@
 }
 
 .navbar {
+    font-size: 62.5%;
     line-height: 60px;
 }
 
@@ -46,6 +46,7 @@
     margin: 30px;
     color: var(--offWhite);
     padding: 17px 20px;
+    font-size: 1.6em;
 }
 
 .wrapper {
@@ -105,15 +106,15 @@
         text-align: center;
         line-height: 50px;
         border-radius: 50%;
-        font-size: 20px;
         color: var(--offBlack);
         cursor: pointer;
         background: var(--offWhite);
         transition: all 0.3s ease-in-out;
+        font-size: 62.5%;
     }
     .fa-bars-staggered {
         color: var(--offBlack);
-        font-size: 25px;
+        font-size: 2.5em;
         margin: 13px;
     } 
     #active:checked ~ .menu-btn{
@@ -132,11 +133,12 @@
     }
     .wrapper ul li{
         margin: 15px 0;
+        font-size: 62.5%;
     }
     .wrapper ul li a{
         color: none;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 2em;
         font-weight: 500;
         padding: 21px 25px; 
         color: var(--offWhite);
@@ -205,7 +207,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: -1; 
+    z-index: -1;
+    font-size: 62.5%;
 }
 
 /* Name appears first, then blurb */
@@ -213,12 +216,15 @@
 .name { 
     margin-top: 40px;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 80px;
+    font-size: 8em;
     animation: neon 2s ease forwards;
+    line-height: 1em;
+    margin-bottom: 30px;
+    padding-top: 30px;
 }
 
 .intro {
-    font-size: 20px;
+    font-size: 2em;
     margin-top: 5px;
     margin-bottom: 35px;
     padding-right: 15%;
@@ -240,7 +246,7 @@
 .fa-envelope, .fa-linkedin, .fa-github {
     margin-left: 30px;
     margin-right: 30px;
-    font-size: 30px;
+    font-size: 3em;
 }
 
 @keyframes neon {
@@ -286,12 +292,13 @@
     position: relative;
     margin-top: 32px;
     overflow: hidden;
+    font-size: 62.5%;
 }
 
 /* Check if I need to add another breakpoint to */ 
 
 .photo_box h1 {
-    font-size: 40px;
+    font-size: 4em;
     color: var(--offWhite);
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -315,11 +322,13 @@
 .text {
     padding-left: 75px; 
     flex-direction: column;
+    font-size: 62.5%;
 }
 
 .about_main p {
     color: var(--offWhite);
     text-align: left; 
+    font-size: 1.6em;
 }
 
 .container {
@@ -424,7 +433,6 @@
 .resume_main {
     color: var(--offBlack);
     font-family: 'Titillium Web', sans-serif;
-    /* left: 2%; */  
     margin: auto; 
 }
 
@@ -433,12 +441,18 @@
     margin: auto;
     width: 60%;  
     padding: 100px 0px 70px 0px; 
+    font-size: 62.5%;
+} 
+
+.resume_content > * {
+    font-size: 1.6em;
 }
 
 .my_name {
     text-align: center;
-    font-size: 32px;
+    font-size: 3.2em;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .resume_headings {
@@ -513,11 +527,13 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    font-size: 62.5%;
 }
 
 .portfolio_main > ul > li > figure > figcaption > h3 {
     color: white;
     padding: 25px;
+    font-size: 1.6em;
 }
 
 @media screen and (max-width: 650px) {
