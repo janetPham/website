@@ -200,27 +200,29 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 100%;
-    display: flex; 
-    flex-direction: column;
+    width: 100%; 
     color: var(--offWhite);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
     z-index: -1;
+    margin-top: 40px;
     font-size: 62.5%;
+}
+
+.index_container {
+    justify-content: center;
+    align-items: center; 
 }
 
 /* Name appears first, then blurb */
 
 .name { 
-    margin-top: 40px;
     font-family: 'Titillium Web', sans-serif;
     font-size: 8em;
     animation: neon 2s ease forwards;
-    line-height: 1em;
     margin-bottom: 30px;
-    padding-top: 30px;
 }
 
 .intro {
@@ -263,8 +265,14 @@
 }
 
 @media screen and (max-width: 650px) {
-    .name {
-        margin-top: -40px;
+    .overlay {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-height: 385px) {
+    .overlay {
+        height: unset; 
     }
 }
 
