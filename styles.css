@@ -80,6 +80,10 @@
         display: none;
     }
 
+    .overlay {
+        z-index: -10;
+    }
+
     /* Hamburger bar menu inspired by: https://codepen.io/yuhomyan/pen/WNwGywp */ 
 
     .wrapper{
@@ -92,13 +96,14 @@
         background: var(--offBlack);
         clip-path: circle(25px at calc(100% - 45px) 45px);
         transition: all 0.25s ease-in-out;
+        z-index: 10;
     }
     #active:checked ~ .wrapper{
         clip-path: circle(75%);
     }
     .menu-btn{
         position: fixed;
-        z-index: 2;
+        z-index: 12;
         top: 20px;
         right: 20px;
         height: 50px;
