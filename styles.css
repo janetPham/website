@@ -206,7 +206,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    z-index: -1;
+    z-index: 1;
     font-size: 62.5%;
 }
 
@@ -248,6 +248,8 @@
     margin-left: 30px;
     margin-right: 30px;
     font-size: 3em;
+    color: var(--offWhite);
+    text-decoration: none;
 }
 
 @keyframes neon {
@@ -477,7 +479,7 @@
 
 .portfolio_body {
     text-align: center;
-    height: 100%;
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/neon_lines.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -489,29 +491,30 @@
 .portfolio_main {
     padding: 50px;
     display: inline-flexbox;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */ 
 }
 
 .portfolio_main > ul {
     margin-top: 40px;
     min-height: inherit;
     display: grid;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 50px;
     list-style-type: none;
 }
 
-.portfolio_main > ul > li > figure {
+.portfolio_main > ul > li > figure  {
     overflow: hidden;
-    height: 450px;
+    height: 550px;
+    width: 405px; 
     position: relative;
     /* Glassmorphism effect implemented using: https://hype4.academy/tools/glassmorphism-generator */ 
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba(238, 241, 212, 0.25) /* rgba( 255, 255, 255, 0.25 ) */; 
+    box-shadow: 0 8px 32px 0 rgba( 238, 241, 212, 0.25 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
@@ -521,10 +524,10 @@
 .portfolio_main > ul > li > figure > img {
     margin-top: 25px;
     margin-bottom: 25px;
-    height: 78%;
+    height: 60%;
     width: 85%;  
     border-radius: 10px;
-}
+} 
 
 .portfolio_main > ul >  li > figure > figcaption {
     position: absolute;
@@ -533,10 +536,29 @@
     font-size: 62.5%;
 }
 
-.portfolio_main > ul > li > figure > figcaption > h3 {
+.portfolio_main > ul > li > figure > div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.portfolio_main > ul > li > figure > div > figcaption > a {
     color: white;
-    padding: 25px;
-    font-size: 1.6em;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bolder;
+}
+
+.portfolio_main > ul > li > figure > div > h3 {
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 650px) {
