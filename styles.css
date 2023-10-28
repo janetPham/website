@@ -528,7 +528,7 @@
 
 .portfolio_main > ul > li > figure > img {
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     height: 60%;
     width: 85%;  
     border-radius: 10px;
@@ -551,8 +551,8 @@
 
 .portfolio_main > ul > li > figure > div > figcaption > a {
     color: white;
-    font-size: 1.3em;
-    margin-bottom: 20px;
+    font-size: 1.2em;
+    margin-bottom: 15spx;
     text-decoration: none;
     font-family: 'Titillium Web', sans-serif;
     font-weight: bolder;
