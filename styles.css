@@ -293,7 +293,7 @@
 }
 
 .photo_box {
-    min-height: 250px;
+    min-height: 35vh;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b0082+0,ff3131+50,fff01f+100&0.75+0,0.75+100 */
     background: -moz-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%, rgba(255,49,49,0.75) 50%, rgba(255,240,31,0.75) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg,  rgba(75,0,130,0.75) 0%,rgba(255,49,49,0.75) 50%,rgba(255,240,31,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -327,6 +327,7 @@
     justify-content: center; 
     margin: 10vw;   
     font-family: 'Titillium Web', sans-serif;
+    min-height: 50vh; 
 }
 
 .text {
