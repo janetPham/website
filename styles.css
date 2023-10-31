@@ -327,7 +327,11 @@
     justify-content: center; 
     margin: 10vw;   
     font-family: 'Titillium Web', sans-serif;
-    min-height: 50vh; 
+    min-height: 50vh;
+}
+
+.test {
+    display: contents;
 }
 
 .text {
@@ -383,9 +387,13 @@
 
 @media screen and (max-width: 1000px) {
     .description {
-        display: inline-block;
+        display: flex;
         padding: 10px 0;   
         place-items: center;
+    }
+    .test {
+        display: inline-block;
+        justify-items: center;
     }
     .container {
         float: left; 
@@ -406,6 +414,10 @@
         margin: 25px 0 0 0; 
         float: none; 
     }
+
+    .test {
+        display: contents;
+    }   
 
     .description {
         display: flex;
@@ -511,6 +523,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 50px;
     list-style-type: none;
+    min-height: 80vh;
 }
 
 .portfolio_main > ul > li > figure  {
@@ -572,5 +585,8 @@
         width: 100%;
         position: absolute; 
         z-index: -1;
+    }
+    .portfolio_main > ul {
+        min-height: unset;
     }
 } 
