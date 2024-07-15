@@ -498,7 +498,8 @@
 .portfolio_body {
     text-align: center;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/neon_lines.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/retro.jpg);
+    background-color: var(--offBlack);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -511,6 +512,7 @@
     display: inline-flexbox;
     justify-items: center;
     align-items: center;
+    overflow: hidden;
     /* min-height: 100vh; */ 
 }
 
@@ -521,15 +523,15 @@
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 50px;
+    grid-gap: 125px;
     list-style-type: none;
     min-height: 80vh;
 }
 
 .portfolio_main > ul > li > figure  {
     overflow: hidden;
-    height: 550px;
-    width: 405px; 
+    height: 500px;
+    width: 350px; 
     position: relative;
     /* Glassmorphism effect implemented using: https://hype4.academy/tools/glassmorphism-generator */ 
     background: rgba(238, 241, 212, 0.25) /* rgba( 255, 255, 255, 0.25 ) */; 
@@ -543,8 +545,8 @@
 .portfolio_main > ul > li > figure > img {
     margin-top: 25px;
     margin-bottom: 20px;
-    height: 60%;
-    width: 85%;  
+    height: 50%;
+    width: 75%;  
     border-radius: 10px;
 } 
 
