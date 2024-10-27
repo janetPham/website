@@ -509,66 +509,74 @@
 
 .portfolio_main {
     padding: 50px;
-    display: inline-flexbox;
-    justify-items: center;
+    display: flex; /* Using flex for the main container */
+    justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* min-height: 100vh; */ 
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't exceed container */
 }
 
 .portfolio_main > ul {
     margin-top: 40px;
-    min-height: inherit;
     display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 125px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates responsive columns */
+    grid-gap: 40px; /* Adjusted gap for better spacing */
     list-style-type: none;
-    min-height: 80vh;
+    padding: 0;
+    width: 100%; /* Ensures that the grid spans across the container */
+    max-width: 1200px; /* Optional: sets a maximum width for larger screens */
+    box-sizing: border-box;
 }
 
-.portfolio_main > ul > li > figure  {
+.portfolio_main > ul > li > figure {
     overflow: hidden;
-    height: 500px;
-    width: 350px; 
+    height: 500px; /* Adjusted height for better aspect ratio */
+    width: 100%; /* Make it responsive */
+    max-width: 350px; /* Ensure it doesn’t blow up too large */
     position: relative;
-    /* Glassmorphism effect implemented using: https://hype4.academy/tools/glassmorphism-generator */ 
-    background: rgba(238, 241, 212, 0.25) /* rgba( 255, 255, 255, 0.25 ) */; 
-    box-shadow: 0 8px 32px 0 rgba( 238, 241, 212, 0.25 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    margin: 0 auto; /* Centering the figure */
+    background: rgba(238, 241, 212, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(238, 241, 212, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .portfolio_main > ul > li > figure > img {
-    margin-top: 25px;
-    margin-bottom: 20px;
-    height: 50%;
-    width: 75%;  
+    margin-top: 20px;
+    height: 55%;
+    width: 75%;
+    max-height: 70%;
     border-radius: 10px;
-} 
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.portfolio_main > ul >  li > figure > figcaption {
+.portfolio_main > ul > li > figure > figcaption {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-size: 62.5%;
+    bottom: 10px;
+    width: 80%;
+    font-size: 1em; /* Adjust for better readability */
+    text-align: center;
+    color: white;
 }
 
 .portfolio_main > ul > li > figure > div {
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    padding: 0px 20px 0px 20px;
+    padding: 20px 20px;
 }
 
 .portfolio_main > ul > li > figure > div > figcaption > a {
     color: white;
     font-size: 1.2em;
-    margin-bottom: 15spx;
+    margin-bottom: 10px;
     text-decoration: none;
     font-family: 'Titillium Web', sans-serif;
     font-weight: bolder;
@@ -579,16 +587,20 @@
     font-family: 'Jost', sans-serif;
     font-size: 1em;
     font-weight: lighter;
-    margin-top: 20px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 @media screen and (max-width: 650px) {
     .portfolio_main {
-        width: 100%;
-        position: absolute; 
-        z-index: -1;
+        padding: 20px; /* Adjusted padding */
     }
     .portfolio_main > ul {
-        min-height: unset;
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        grid-gap: 20px;
     }
-} 
+    .portfolio_main > ul > li > figure {
+        height: auto; /* Adjust height to auto for smaller screens */
+        max-width: 100%; /* Prevents overflowing */
+    }
+}
